@@ -1,0 +1,96 @@
+17
+1 1
+has_body_hair
+is_a_mammal
+add_to
+1 1
+drink_milk
+is_a_mammal
+add_to
+1 1
+has_feather
+is_a_bird
+add_to
+1 1
+can_fly_lay_eggs
+is_a_bird
+add_to
+3 1
+is_bird body_size_is_large outlook_is_white
+is_a_swan
+add_to
+3 1
+is_bird body_size_is_small outlook_is_black
+is_a_swallow
+add_to
+3 1
+is_bird body_size_is_moderate outlook_is_black
+is_a_crow
+add_to
+2 1
+is_a_mammal eats_meat
+is_a_carnivore
+add_to
+3 1
+is_a_mammal has_sharp_teeth has_sharp_claws
+is_a_carnivore
+add_to
+3 1
+is_a_carnivore has_brown_body_color has_big_body
+is_a_lion
+add_to
+3 1
+is_a_carnivore has_brown_body_color has_medium_sized_body
+is_a_fox
+add_to
+2 1
+is_a_mammal has_hoofs
+is_an_ungulate
+add_to
+2 1
+is_an_ungulate has_an_even_number_of_toes
+is_an_even-toed_ungulate
+add_to
+2 1
+is_an_ungulate ruminates
+is_an_even-toed_ungulate
+add_to
+2 1
+is_an_ungulate has_an_odd_number_of_toes
+is_an_odd-toed_ungulate
+add_to
+3 1
+is_an_even-toed_ungulate has_brown_body_color has_black_spots
+is_a_deer
+add_to
+3 1
+is_an_odd-toed_ungulate has_white_body_color has_black_strings
+is_a_zebra
+add_to
+5
+has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body
+unknown_animal
+5
+3 1
+c1 c2 c5
+c5
+add_to
+3 1
+c1 c3 c6
+c7
+add_to
+2 1
+c1 c2
+c5
+add_to
+1 1
+c5
+c6
+add_to
+1 2
+c2
+c3 c4
+add_to
+2
+c1 c2
+unknown

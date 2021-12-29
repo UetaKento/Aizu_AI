@@ -1,0 +1,38 @@
+What are the algorithms used in this project?
+->Depth First Search & Breadth First Search
+
+Describe the algorithms briefly based on your understanding.
+->Depth First Searchはオープンリストにスタックを使って、隣接する未訪問の頂点を訪問し、それを訪問済みとしてマークする。次に、それをスタックにプッシュして、隣接する頂点が見つからない場合は、スタックから頂点をポップアップします。
+Breadth First Searchはオープンリストにキューを使って、未訪問の隣接頂点を訪問しながら、キューから頂点を繰り返し削除します。
+
+
+Explain the meaning of the results obtained by running the completed program.
+->現在の頂点につながっている頂点とつながっていない頂点が1と0で隣接行列にあらわされているのでそれを読み込み、DFSとBFSで頂点のつながりをみつける。
+
+# Explanation of modified points (required)
+　TODO:1
+　dfs_visit(g, vertex_states, g->vertex_starting_search);
+　dfs_visit関数の引数に一番最初の頂点（ルート）を入れて、dfs_visit関数を動かした。
+ TODO:2
+　vertex_states[current_vertex] = VISITED;
+　dfs_visit関数に入ってきた現在の頂点をVISITEDの状態にした。
+ TODO:3
+　if (vertex_states[i] == UNVISITED && g->adjacent_matrix[current_vertex][i] == CONNECTED)
+　現在の頂点から見て繋がっていて、かつまだ訪れていない場所があればそこを探索する。
+ TODO:4
+　s_queue_enqueue(g->vertex_starting_search);
+　キューに一番最初の頂点（ルート）を入れた。
+ TODO:5
+　vertex_states[g->vertex_starting_search] = VISITED;
+　一番最初の頂点（ルート）をVISITEDの状態にした。
+ TODO:6
+　if (vertex_states[i] == UNVISITED && g->adjacent_matrix[current_vertex][i] == CONNECTED)
+　TODO:3と同じ。
+
+# Discussion (if needed)
+
+
+# Comments (if needed)
+　ヘッダーファイルをみるという考えを思いつかなかったので、問題解決に時間がかかった。
+　普通に解いていたら、TAさんと同じ答えになったので戸惑った。
+　答え合わせがあることによって、疑問が解決できるのでありがたい。

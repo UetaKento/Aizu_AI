@@ -1,0 +1,27 @@
+15 4
+Abe MALE 90 89 80 77
+Watanabe FEMALE 80 88 81 50
+Ryo MALE 80 85 79 79
+Yuki FEMALE 91 81 82 70
+Yamada MALE 55 66 88 90
+Matsumoto MALE 50 40 60 49
+Kurosaki MALE 70 70 70 70
+Ishida MALE 90 95 95 95
+Yamamoto MALE 41 41 51 62
+Hayashi MALE 99 99 99 99
+Badboy MALE 10 10 10 10
+Tom MALE 49 69 50 71
+Kobayashi MALE 56 52 54 80
+Sakamoto MALE 80 15 86 56
+Verybad MALE 0 0 0 0
+ask Yamada gender
+ask Yamada rank
+ask Yamada scholarship
+ask nobody rank
+conf Yamada gender MALE
+conf Yamada rank 10
+conf Yamada rank 6
+ask Yamada average
+ask Verybad average
+ask Kobayashi average
+conf Yamada average 74.75

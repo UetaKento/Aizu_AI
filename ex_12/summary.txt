@@ -1,0 +1,23 @@
+# Explanation of modified points (required)
+TODO: 1. Write unipolar sigmoid function (lambda = 1).
+double y = 0.0;
+double lambda = 1.0;
+y = 1 / (1 + exp(-lambda * x));
+
+TODO: 2. Calculate the inner product.
+double inner = 0.0;
+for(size_t i = 0; i < length; i++){
+  inner = inner + v1[i] * v2[i];
+}
+
+TODO: 3. Calculate the error of the output layer for backpropagation.
+mlp->output_errors[i] = diff * (output - (output * output));
+error += (diff * diff) / 2.0;
+
+TODO:: 4. Update weight based on backpropagation.
+weights[i][j] = weights[i][j] + learning_rate * errors[i] * inputs[j];
+
+# Discussion (if needed)
+
+
+# Comments (if needed)

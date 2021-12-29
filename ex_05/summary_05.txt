@@ -1,0 +1,35 @@
+What are the algorithms used in this project?
+->前向き推論、LEX戦略、バブルソート
+
+
+Describe the algorithms briefly based on your understanding.
+->前向き推論は、観測事実から当てはまるルールを見つけてワーキングメモリに推論結果を追加する。
+LEX戦略は、より詳細な推測結果を追加するためのより良いルールを探す戦略。
+バブルソートは、バラバラに並んでいるデータを隣り合うデータの大小関係を用いて並び変える手法。
+
+
+Explain the meaning of the results obtained by running the completed program.
+->if("~~~~~")の部分を観測部分とし、pattern_matching()で観測事実と各ルールの条件を比較していき、
+全ての条件がマッチした場合、そのルールを競合集合に入れる。
+LEX戦略を用いることで競合集合に入ったルールからより良い推測結果が得る。
+do_action()でruleのactionがaddの場合、ワーキングメモリに推論結果を追加する。
+deleteの場合、推論結果をワーキングメモリから削除する。
+
+
+# Explanation of modified points (required)
+TODO:1
+　selected_rules[num_selected_rules] = p_system->conflict_set[i];
+　num_selected_rules ++;
+TODO:2
+　bubble_sort(selected_rules, num_selected_rules, sizeof(Rule*), compare_time_tag);
+TODO:3
+　return selected_rules[0];
+TODO:4
+　bubble_sort(selected_rules, num_selected_rules, sizeof(Rule*), compare_conditions);
+TODO:5
+　return selected_rules[0];
+
+# Discussion (if needed)
+
+
+# Comments (if needed)

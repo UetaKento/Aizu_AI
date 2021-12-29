@@ -1,0 +1,57 @@
+Error in the       0-th learning cycle = 2.834544
+Error in the   10000-th learning cycle = 2.015002
+Error in the   20000-th learning cycle = 2.013674
+Error in the   30000-th learning cycle = 2.013278
+Error in the   40000-th learning cycle = 2.013089
+Error in the   50000-th learning cycle = 2.012976
+Error in the   60000-th learning cycle = 2.012897
+Error in the   70000-th learning cycle = 2.012832
+Error in the   80000-th learning cycle = 2.012747
+Error in the   90000-th learning cycle = 2.012164
+Error in the  100000-th learning cycle = 1.596681
+Error in the  110000-th learning cycle = 1.188161
+Error in the  120000-th learning cycle = 0.414840
+Error in the  130000-th learning cycle = 0.407807
+Error in the  140000-th learning cycle = 0.405495
+Error in the  150000-th learning cycle = 0.404347
+Error in the  160000-th learning cycle = 0.403660
+Error in the  170000-th learning cycle = 0.403204
+Error in the  180000-th learning cycle = 0.402877
+Error in the  190000-th learning cycle = 0.402632
+Error in the  200000-th learning cycle = 0.402440
+Error in the  210000-th learning cycle = 0.402285
+Error in the  220000-th learning cycle = 0.402158
+Error in the  230000-th learning cycle = 0.402049
+Error in the  240000-th learning cycle = 0.401956
+Error in the  250000-th learning cycle = 0.401874
+Error in the  260000-th learning cycle = 0.401799
+Error in the  270000-th learning cycle = 0.401729
+Error in the  280000-th learning cycle = 0.401661
+Error in the  290000-th learning cycle = 0.401591
+Error in the  300000-th learning cycle = 0.401510
+Error in the  310000-th learning cycle = 0.401393
+Error in the  320000-th learning cycle = 0.401101
+Error in the  330000-th learning cycle = 0.257008
+Error in the  340000-th learning cycle = 0.003702
+Error in the  350000-th learning cycle = 0.001612
+Error in the  360000-th learning cycle = 0.001019
+Error: 0.000999
+
+Results: input -> output (answer)
+0.00 0.00 0.00 0.00 -> 0.0086 ( 0.0000 )
+0.00 0.00 0.00 1.00 -> 0.9988 ( 1.0000 )
+0.00 0.00 1.00 0.00 -> 0.9988 ( 1.0000 )
+0.00 0.00 1.00 1.00 -> 0.0047 ( 0.0000 )
+0.00 1.00 0.00 0.00 -> 0.9988 ( 1.0000 )
+0.00 1.00 0.00 1.00 -> 0.0048 ( 0.0000 )
+0.00 1.00 1.00 0.00 -> 0.0047 ( 0.0000 )
+0.00 1.00 1.00 1.00 -> 0.9851 ( 1.0000 )
+1.00 0.00 0.00 0.00 -> 0.9988 ( 1.0000 )
+1.00 0.00 0.00 1.00 -> 0.0048 ( 0.0000 )
+1.00 0.00 1.00 0.00 -> 0.0047 ( 0.0000 )
+1.00 0.00 1.00 1.00 -> 0.9851 ( 1.0000 )
+1.00 1.00 0.00 0.00 -> 0.0048 ( 0.0000 )
+1.00 1.00 0.00 1.00 -> 0.9851 ( 1.0000 )
+1.00 1.00 1.00 0.00 -> 0.9851 ( 1.0000 )
+1.00 1.00 1.00 1.00 -> 0.0300 ( 0.0000 )
+

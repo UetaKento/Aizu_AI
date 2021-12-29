@@ -1,0 +1,23 @@
+ask Yamada gender
+-> MALE
+ask Yamada rank
+-> 6
+ask Yamada scholarship
+-> Scholarship_Half
+ask nobody rank
+-> Student nobody is NOT found.
+-> Command execution failure.
+conf Yamada gender MALE
+-> You are right.
+conf Yamada rank 10
+-> You are wrong.
+conf Yamada rank 6
+-> You are right.
+ask Yamada average
+-> 74.75
+ask Verybad average
+-> 0.00
+ask Kobayashi average
+-> 60.50
+conf Yamada average 74.75
+-> You are right.

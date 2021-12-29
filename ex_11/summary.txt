@@ -1,0 +1,17 @@
+# Explanation of modified points (required)
+TODO: 1
+weight[j] = frand_xorshift();
+
+TODO: 2
+double dist = euclidean_distance(feature, son->weight_vectors[k], dataset->feature_dimension);
+if (dist < min_distance){
+  min_distance = dist;
+  winner_index = k;
+
+TODO: 3
+winner_weight[k] = winner_weight[k] + son->learning_rate * (feature[k] - winner_weight[k]);
+
+# Discussion (if needed)
+
+
+# Comments (if needed)

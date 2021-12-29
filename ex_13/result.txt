@@ -1,0 +1,16 @@
+# Explanation of modified points (required)
+分類の決定木
+1  x3<2.45 の場合はノード 2、x3>=2.45 の場合はノード 3、それ以外の場合は setosa
+2  class = setosa
+3  x4<1.75 の場合はノード 4、x4>=1.75 の場合はノード 5、それ以外の場合は versicolor
+4  x3<4.95 の場合はノード 6、x3>=4.95 の場合はノード 7、それ以外の場合は versicolor
+5  class = virginica
+6  x4<1.65 の場合はノード 8、x4>=1.65 の場合はノード 9、それ以外の場合は versicolor
+7  class = virginica
+8  class = versicolor
+9  class = virginica
+
+# Discussion (if needed)
+
+
+# Comments (if needed)

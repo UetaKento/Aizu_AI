@@ -1,0 +1,95 @@
+Start inference
+Target: unknown_animal
+Observations: has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body 
+Output format: is_used time_tag if(XXX) -> then(YYY)
+----------------------------------------------------------------------------------------------------
+Resolve: step 1
+Conflict set:
+   0 if(has_body_hair && ) -> then(is_a_mammal, )
+Selected rule:
+   0 if(has_body_hair && ) -> then(is_a_mammal, )
+Current working memory:
+has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body is_a_mammal 
+----------------------------------------------------------------------------------------------------
+Resolve: step 1
+Conflict set:
+ # 0 if(has_body_hair && ) -> then(is_a_mammal, )
+   1 if(is_a_mammal && has_sharp_teeth && has_sharp_claws && ) -> then(is_a_carnivore, )
+Selected rule:
+   1 if(is_a_mammal && has_sharp_teeth && has_sharp_claws && ) -> then(is_a_carnivore, )
+Current working memory:
+has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body is_a_mammal is_a_carnivore 
+----------------------------------------------------------------------------------------------------
+Resolve: step 1
+Conflict set:
+ # 0 if(has_body_hair && ) -> then(is_a_mammal, )
+ # 1 if(is_a_mammal && has_sharp_teeth && has_sharp_claws && ) -> then(is_a_carnivore, )
+   2 if(is_a_carnivore && has_brown_body_color && has_medium_sized_body && ) -> then(is_a_fox, )
+Selected rule:
+   2 if(is_a_carnivore && has_brown_body_color && has_medium_sized_body && ) -> then(is_a_fox, )
+Current working memory:
+has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body is_a_mammal is_a_carnivore is_a_fox 
+----------------------------------------------------------------------------------------------------
+Conclusion: unknown_animal is_a_fox
+
+Start inference
+Target: unknown
+Observations: c1 c2 
+Output format: is_used time_tag if(XXX) -> then(YYY)
+----------------------------------------------------------------------------------------------------
+Resolve: step 3
+Conflict set:
+   0 if(c1 && c2 && ) -> then(c5, )
+   0 if(c2 && ) -> then(c3, c4, )
+Selected rule:
+   0 if(c1 && c2 && ) -> then(c5, )
+Current working memory:
+c1 c2 c5 
+----------------------------------------------------------------------------------------------------
+Resolve: step 3
+Conflict set:
+   1 if(c1 && c2 && c5 && ) -> then(c5, )
+ # 0 if(c1 && c2 && ) -> then(c5, )
+   1 if(c5 && ) -> then(c6, )
+   0 if(c2 && ) -> then(c3, c4, )
+Selected rule:
+   1 if(c1 && c2 && c5 && ) -> then(c5, )
+Current working memory:
+c1 c2 c5 
+----------------------------------------------------------------------------------------------------
+Resolve: step 2
+Conflict set:
+ # 1 if(c1 && c2 && c5 && ) -> then(c5, )
+ # 0 if(c1 && c2 && ) -> then(c5, )
+   1 if(c5 && ) -> then(c6, )
+   0 if(c2 && ) -> then(c3, c4, )
+Selected rule:
+   1 if(c5 && ) -> then(c6, )
+Current working memory:
+c1 c2 c5 c6 
+----------------------------------------------------------------------------------------------------
+Resolve: step 1
+Conflict set:
+ # 1 if(c1 && c2 && c5 && ) -> then(c5, )
+ # 0 if(c1 && c2 && ) -> then(c5, )
+ # 1 if(c5 && ) -> then(c6, )
+   0 if(c2 && ) -> then(c3, c4, )
+Selected rule:
+   0 if(c2 && ) -> then(c3, c4, )
+Current working memory:
+c1 c2 c5 c6 c3 c4 
+----------------------------------------------------------------------------------------------------
+Resolve: step 1
+Conflict set:
+ # 1 if(c1 && c2 && c5 && ) -> then(c5, )
+   4 if(c1 && c3 && c6 && ) -> then(c7, )
+ # 0 if(c1 && c2 && ) -> then(c5, )
+ # 1 if(c5 && ) -> then(c6, )
+ # 0 if(c2 && ) -> then(c3, c4, )
+Selected rule:
+   4 if(c1 && c3 && c6 && ) -> then(c7, )
+Current working memory:
+c1 c2 c5 c6 c3 c4 c7 
+----------------------------------------------------------------------------------------------------
+Conclusion: unknown c7
+

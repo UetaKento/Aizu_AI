@@ -1,0 +1,10 @@
+0-th Test
+  Accuracy: 0.900
+1-th Test
+  Accuracy: 0.980
+2-th Test
+  Accuracy: 0.900
+
+3-fold cross-validation result.
+Mean:    0.927
+Variant: 0.001

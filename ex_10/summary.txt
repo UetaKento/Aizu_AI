@@ -1,0 +1,25 @@
+# Explanation of modified points (required)
+TODO:1
+  double distance = euclidean_distance(input_vector -> elements, reference_pattern -> elements, dataset -> feature_dimension);
+  入力と参照先がどれほど似ているか（距離が近いか）を計算。
+TODO:2
+  *(predicted_labels+i) = reference_pattern -> label;
+  min_distance = distance;
+  より近いものがあれば距離を更新する。
+TODO:3
+  double distance = 0.0;
+  for (size_t i = 0; i < length; i++){
+      distance = distance + (*(v1+i) - *(v2+i)) * (*(v1+i) - *(v2+i));
+  }
+  return sqrt(distance);
+  ユークリッド距離の計算。
+TODO:4
+  if (*(predicted_labels+i) == (dataset -> features+i)->label){
+        correct_count = correct_count + 1.0;
+    }
+    ラベルが一致すればcorrect_countをカウントアップ。
+
+# Discussion (if needed)
+
+
+# Comments (if needed)
